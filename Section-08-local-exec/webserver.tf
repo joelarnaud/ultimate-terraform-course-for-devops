@@ -10,11 +10,11 @@ resource "aws_instance" "hellow-world" {
  provisioner "local-exec" {
     command = "echo ${self.private_ip} > webserver_private_ip.txt"
     # command = "echo ${self.public_ip} > webserver_public_ip.txt"
-    on_failure = continue
+    on_failure = "continue"
  }
  provisioner "local-exec" {
     command = "echo ${self.public_ip} > webserver_public_ip.txt"
-    on_failure = continue
+    on_failure = "continue"
  }
  user_data = <<-EOF
  #!/bin/bash

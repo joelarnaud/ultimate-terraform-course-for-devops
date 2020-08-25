@@ -1,0 +1,21 @@
+diff a/Section-07-vpc-subnet-igw-natgw/remote_state.tf b/Section-07-vpc-subnet-igw-natgw/remote_state.tf	(rejected hunks)
+@@ -1,9 +0,9 @@
+-terraform {
+-backend s3 {
+-encrypt=true
+-bucket = "terraformiac-mystach-tfstate"
+-region = "us-east-1"
+-dynamodb_table = "terraform-state"
+-key="stage_vpc/terraform.tfstate"
+-}
+-}
+\ No newline at end of file
++#terraform {
++#backend s3 {
++#encrypt=true
++#bucket = "terraformiac-mystach-tfstate"
++#region = "us-east-1"
++#dynamodb_table = "terraform-state"
++#key="stage_vpc/terraform.tfstate"
++#}
++#}

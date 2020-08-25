@@ -1,5 +1,5 @@
 variable "instance_type" {
-  type = map
+  type = "map"
   
   default = {
    default = "t2.nano"

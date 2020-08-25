@@ -16,7 +16,7 @@ variable "ami" {
 }
 
 variable "instance_type" {
-  type = map
+  type = "map"
   default = {
 default = "t2.micro"
 stage = "t2.nano"
